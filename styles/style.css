@@ -169,3 +169,21 @@ body {
 #welcome .bigPicture img {
     width: 100%;
 }
+
+/* ========== About me style ================================================ */
+
+#aboutMe {
+    background-color: var(--background3);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutMe .aboutImage,
+#aboutMe #myself {
+    width: 48%;
+}
+
+#aboutMe .aboutImage {
+    height: 100%;
+    border-radius: 25px;
+}
