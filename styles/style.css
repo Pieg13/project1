@@ -21,6 +21,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 ul {
@@ -40,6 +41,14 @@ a {
 body {
     font-family: var(--mainFont);
     font-size: 18px;
+}
+
+.button {
+    border: 1px solid white;
+    color: white;
+    border-radius: 64px;
+    font-size: 1rem;
+    padding: 10px;
 }
 /* ========== Banner style ================================================== */
 
@@ -109,5 +118,54 @@ body {
 
 #welcome {
     display: flex;
-    background-color: var(--background3);
+    background-color: var(--background1);
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#welcome .welcomeText {
+    width: 70%;
+}
+
+#welcome .welcomeText .hello {
+    display: flex;
+    margin-top: 20px;
+}
+
+#welcome .welcomeText .hello img {
+    width: 12%;
+    margin-right: 16px;
+}
+
+#welcome .welcomeText .hello h2 {
+    background-color: white;
+    color: black;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+#welcome .welcomeText h3 {
+    background-color:white;
+    border-radius: 64px;
+    color: var(--background2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 50px 0;
+    padding: 12px 16px;
+    font-size: 1.5rem;
+}
+
+#welcome .bigPicture {
+    width: 30%;
+}
+
+#welcome .bigPicture img {
+    width: 100%;
 }
