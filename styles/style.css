@@ -80,6 +80,11 @@ body {
     width: 50%;
 }
 
+#banner #navMenu #burger i{
+    font-size: 2rem;
+    display: none;
+}
+
 #banner #navMenu ul {
     display: flex;
 }
@@ -358,6 +363,19 @@ body {
         width: 98%;
     }
 
+    #banner #navMenu #burger i{
+        display: block;
+        text-align: right;
+    }
+
+    #banner #navMenu ul{
+        display: none;
+    }
+
+    #banner #phone p {
+        display: none;
+    }
+
     #myProjects #projects .project{
         width: 98%;
         height: 350px;
@@ -375,5 +393,13 @@ body {
     #footer #info #contact,
     #footer #info #form {
         width: 98%;
+    }
+
+    #banner #welcome {
+        width: 98%;
+    }
+
+    #welcome .bigPicture {
+        display: none;
     }
 }
