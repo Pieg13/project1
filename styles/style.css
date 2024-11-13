@@ -43,6 +43,10 @@ body {
     font-size: 18px;
 }
 
+#content {
+    background-color: var(--background3);
+}
+
 .button {
     border: 1px solid white;
     color: white;
@@ -173,17 +177,203 @@ body {
 /* ========== About me style ================================================ */
 
 #aboutMe {
-    background-color: var(--background3);
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 24px;
 }
 
 #aboutMe .aboutImage,
-#aboutMe #myself {
-    width: 48%;
+#aboutMe #aboutContent {
+    width: 46%;
+}
+
+.title {
+    display: flex;
+    background-color: var(--background2);
+    border-radius: 25px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    padding: 0 10%;
+}
+
+#aboutMe #aboutContent h2 img {
+    width: 18%;
+    margin-left: 32px;
 }
 
 #aboutMe .aboutImage {
-    height: 100%;
+    height: 100%; /* avoids image stretching vertically */
     border-radius: 25px;
+}
+
+#aboutMe #aboutContent h3 {
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+/* ========== My projects style ============================================= */
+
+#myProjects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 48px;
+    flex-wrap: wrap;
+}
+
+#myProjects .title {
+    flex-direction: row-reverse;
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+#myProjects h2 img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 32px;
+}
+
+#myProjects #projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#myProjects #projects .project {
+    width: 48%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    height: 490px;
+    overflow: hidden;
+}
+
+#myProjects #projects .project:hover {
+    border: var(--background2) solid 2px;
+}
+
+#myProjects #projects .project h4 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#myProjects .project img {
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 40px;
+    transform: rotate(10deg);
+}
+
+/* ========== Contact style ================================================= */
+
+#footer {
+    background-color: var(--background3);
+}
+
+#footer #info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 24px;
+}
+
+#footer #info #contact,
+#footer #info #form {
+    width: 46%;
+}
+
+#footer #info #contact {
+    display: flex;
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    max-height: 340px;
+    margin-top: 165px;
+}
+
+#footer #info #contact .column {
+    width: 48%;
+}
+
+#footer #info #contact .column h4 {
+    margin: 10px 0;
+}
+
+#footer #info #contact .column ul {
+    display: flex;
+}
+#footer #info #contact .column ul li a {
+    margin: 0 10px;
+    color: var(--background2);
+}
+
+#footer #info #form .title {
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+}
+
+#footer #info #form p{
+    margin: 8px;
+}
+
+#footer #info #form input[type=text],
+#footer #info #form input[type=email],
+#footer #info #form textarea {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#footer #info #form input[type=submit] {
+    background-color: var(--background2);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+#footer #info #form .title img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 32px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width : 768px){
+    #aboutMe .aboutImage,
+    #aboutMe #aboutContent {
+        width: 98%;
+    }
+
+    #myProjects #projects .project{
+        width: 98%;
+        height: 350px;
+        margin-bottom: 16px;
+    }
+
+    #myProjects .title {
+        width: 98%;
+    }
+
+    #footer #info {
+        flex-direction: column-reverse;
+    }
+
+    #footer #info #contact,
+    #footer #info #form {
+        width: 98%;
+    }
 }

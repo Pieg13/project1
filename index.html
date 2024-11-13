@@ -50,6 +50,67 @@
             </p>
         </div>
     </div>
+    <section id="myProjects">
+        <h2 class="title">
+            My&nbsp;projects
+            <img src="images/aerial-view.jpg" alt="myself">
+        </h2>
+        <div id="projects">
+            <article class="project">
+                <h4>Website</h4>
+                <h3>Zoik Agency</h3>
+                <img src="images/nikhil.jpg" alt="Zoik Agency">
+            </article>
+            <article class="project">
+                <h4>Photography</h4>
+                <h3>The Watch</h3>
+                <img src="images/the-5th.jpg" alt="The Watch">
+            </article>
+        </div>
+    </section>
     </main>
+    <footer id="footer" class="container">
+        <aside id="info">
+            <div id="contact">
+                <div class="column">
+                    <h4>Let's stay in touch</h4>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                    <h4>Let's get to work</h4>
+                    <p>I'm ready to work with you</p>
+                </div>
+                <div class="column">
+                    <h4>About</h4>
+                    <p>I am a future web dev, let's keep in touch</p>
+                    <h4>Email</h4>
+                    <p>Hello[@]me.net</p>
+                    <h4>Phone</h4>
+                    <p>07 52 07 36 34</p>
+                </div>
+            </div>
+            <div id="form">
+                <h2 class="title">
+                    Contact
+                    <img src="images/handshake-man.jpg" alt="handshake">
+                </h2>
+                <form action="sendmail.php" method="post">
+                    <p><input type="text" name="name" placeholder="Name"></p>
+                    <p><input type="email" name="email" placeholder="Email"></p>
+                    <p>Vos projets</p>
+                    <p><input type="checkbox" name="projects" id="website" value="website"><label for="website"> Website</label></p>
+                    <p><input type="checkbox" name="projects" id="ecom" value="ecommerce"> <label for="ecom">Ecommerce</label></p>
+                    <p><input type="checkbox" name="projects" id="seo" value="seo"><label for="seo"> SEO</label></p>
+                    <p><textarea name="message" id="" placeholder="describe your project..." rows="5"></textarea></p>
+                    <p><input type="submit" value="submit"></p>
+                </form>
+            </div>
+        </aside>
+        <div id="copyright">
+            You are our property and must obey us, your masters (C)
+        </div>
+    </footer>
 </body>
 </html>
